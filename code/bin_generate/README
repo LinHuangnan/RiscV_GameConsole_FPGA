@@ -1,0 +1,14 @@
+1.子文件夹BootLoader用来产生boot程序，输出为boot程序的二进制文件BootLoader.bin。
+
+    进入该文件夹路径后，执行makefile文件即可。
+
+    !!!需要安装riscv-nuclei工具链。
+
+2.在当前路径执行makefile文件可以将nuclei IDE产生的主程序对应的.elf文件转换为二进制文件tb.bin。
+然后将BootLoader.bin和tb.bin整合成main.bin文件。最后将main.bin文件下载进flash即可。
+
+3.上电后，现在flash里执行boot程序，将主程序赋值进系统存储，然后调到系统存储里执行主程序。
+
+4.注意fpga的固化比特流文件和main.bin共享同一块flash；
+下载时main.bin烧录起始地址为0x00，而flash比特流烧录起始地址不应该太靠前而覆盖掉main.bin。
+目前flash比特流烧录起始地址为0x140000。（注意更改flash比特流烧录起始地址时需要先擦除整块flash）。
