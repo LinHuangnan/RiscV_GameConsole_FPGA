@@ -1,0 +1,174 @@
+##### Written on 2023/11/05 19:09:08 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	system
+
+Constraint File(s) : 
+	C:/pango/prj/e203_test/source/e203_constraint.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 32 critical warning(s), 0 warning(s), out of 992 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+
+define_attribute {p:qspi0_dq[3]} {PAP_IO_LOC} {A3}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 47)] | Port qspi0_dq[3] has been placed at location A3, whose type is share pin.
+
+define_attribute {p:qspi0_dq[2]} {PAP_IO_LOC} {B3}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 54)] | Port qspi0_dq[2] has been placed at location B3, whose type is share pin.
+
+define_attribute {p:qspi0_dq[1]} {PAP_IO_LOC} {A4}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 61)] | Port qspi0_dq[1] has been placed at location A4, whose type is share pin.
+
+define_attribute {p:qspi0_dq[0]} {PAP_IO_LOC} {B4}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 68)] | Port qspi0_dq[0] has been placed at location B4, whose type is share pin.
+
+define_attribute {p:qspi0_cs} {PAP_IO_LOC} {B8}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 75)] | Port qspi0_cs has been placed at location B8, whose type is share pin.
+
+define_attribute {p:qspi0_sck} {PAP_IO_LOC} {C9}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 82)] | Port qspi0_sck has been placed at location C9, whose type is share pin.
+
+define_attribute {p:gpioA[23]} {PAP_IO_LOC} {E8}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 146)] | Port gpioA[23] has been placed at location E8, whose type is share pin.
+
+define_attribute {p:gpioA[21]} {PAP_IO_LOC} {C6}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 160)] | Port gpioA[21] has been placed at location C6, whose type is share pin.
+
+define_attribute {p:gpioA[20]} {PAP_IO_LOC} {D6}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 167)] | Port gpioA[20] has been placed at location D6, whose type is share pin.
+
+define_attribute {p:eth_rst_n} {PAP_IO_LOC} {D10}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 818)] | Port eth_rst_n has been placed at location D10, whose type is share pin.
+
+define_attribute {p:rcv_in} {PAP_IO_LOC} {E11}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 873)] | Port rcv_in has been placed at location E11, whose type is share pin.
+
+define_attribute {p:lcd_rgb[23]} {PAP_IO_LOC} {C10}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 882)] | Port lcd_rgb[23] has been placed at location C10, whose type is share pin.
+
+define_attribute {p:lcd_rgb[22]} {PAP_IO_LOC} {C13}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 889)] | Port lcd_rgb[22] has been placed at location C13, whose type is share pin.
+
+define_attribute {p:lcd_rgb[21]} {PAP_IO_LOC} {D13}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 896)] | Port lcd_rgb[21] has been placed at location D13, whose type is share pin.
+
+define_attribute {p:lcd_rgb[19]} {PAP_IO_LOC} {C11}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 910)] | Port lcd_rgb[19] has been placed at location C11, whose type is share pin.
+
+define_attribute {p:lcd_rgb[18]} {PAP_IO_LOC} {B10}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 917)] | Port lcd_rgb[18] has been placed at location B10, whose type is share pin.
+
+define_attribute {p:lcd_rgb[17]} {PAP_IO_LOC} {A10}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 924)] | Port lcd_rgb[17] has been placed at location A10, whose type is share pin.
+
+define_attribute {p:lcd_rgb[16]} {PAP_IO_LOC} {B11}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 931)] | Port lcd_rgb[16] has been placed at location B11, whose type is share pin.
+
+define_attribute {p:lcd_rgb[15]} {PAP_IO_LOC} {A11}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 938)] | Port lcd_rgb[15] has been placed at location A11, whose type is share pin.
+
+define_attribute {p:lcd_rgb[14]} {PAP_IO_LOC} {B12}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 945)] | Port lcd_rgb[14] has been placed at location B12, whose type is share pin.
+
+define_attribute {p:lcd_rgb[13]} {PAP_IO_LOC} {A12}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 952)] | Port lcd_rgb[13] has been placed at location A12, whose type is share pin.
+
+define_attribute {p:lcd_rgb[4]} {PAP_IO_LOC} {B17}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1015)] | Port lcd_rgb[4] has been placed at location B17, whose type is share pin.
+
+define_attribute {p:lcd_rgb[3]} {PAP_IO_LOC} {A17}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1022)] | Port lcd_rgb[3] has been placed at location A17, whose type is share pin.
+
+define_attribute {p:lcd_rgb[2]} {PAP_IO_LOC} {F11}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1029)] | Port lcd_rgb[2] has been placed at location F11, whose type is share pin.
+
+define_attribute {p:lcd_rgb[1]} {PAP_IO_LOC} {G11}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1036)] | Port lcd_rgb[1] has been placed at location G11, whose type is share pin.
+
+define_attribute {p:lcd_rgb[0]} {PAP_IO_LOC} {E15}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1043)] | Port lcd_rgb[0] has been placed at location E15, whose type is share pin.
+
+define_attribute {p:lcd_bl} {PAP_IO_LOC} {C17}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1050)] | Port lcd_bl has been placed at location C17, whose type is share pin.
+
+define_attribute {p:lcd_de} {PAP_IO_LOC} {D18}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1057)] | Port lcd_de has been placed at location D18, whose type is share pin.
+
+define_attribute {p:lcd_hs} {PAP_IO_LOC} {E18}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1064)] | Port lcd_hs has been placed at location E18, whose type is share pin.
+
+define_attribute {p:lcd_clk} {PAP_IO_LOC} {E17}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1071)] | Port lcd_clk has been placed at location E17, whose type is share pin.
+
+define_attribute {p:lcd_rst} {PAP_IO_LOC} {C18}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1078)] | Port lcd_rst has been placed at location C18, whose type is share pin.
+
+define_attribute {p:lcd_vs} {PAP_IO_LOC} {D17}
+
+	C: ConstraintEditor-2002: [C:/pango/prj/e203_test/source/e203_constraint.fdc(line number: 1085)] | Port lcd_vs has been placed at location D17, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+
+
+
+
+
+
+
+
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+
+
+
+

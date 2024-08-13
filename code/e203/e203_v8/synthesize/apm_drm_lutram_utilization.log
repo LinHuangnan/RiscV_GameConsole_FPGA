@@ -1,0 +1,103 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Detailed RTL Component Info :
+-----Module Name :
+                    system
+
+-----ROMs :
+            1K Bit    (128 x 9 bit)          ROMs := 1
+            4K Bit    (128 x 32 bit)          ROMs := 1
+            1K Bit    (1024 x 1 bit)          ROMs := 3
+
+-----RAMs :
+            64 Bit    (8 x 8 bit)          RAMs := 2
+            32K Bit    (4096 x 8 bit)          RAMs := 8
+            64K Bit    (8192 x 8 bit)          RAMs := 4
+
+Distributed RAM and Block RAM: Final Mapping Report
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| DPRAM Inst Name                                                                                                                    | Size (Depth x Width)   | Primitives        | Count   |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_qspi0_top/u_sirv_flash_qspi/fifo/txq/ram                      | 8 x 8                  |                   |         |
+|                                                                                                                                    | 8 x 1                  | GTP_RAM16X1DP     | 8       |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_sirv_qspi0_top/u_sirv_flash_qspi/fifo/rxq/ram                      | 8 x 8                  |                   |         |
+|                                                                                                                                    | 8 x 1                  | GTP_RAM16X1DP     | 8       |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_sirv_mrom_top/u_sirv_mrom/mask_rom_1                                 | 1024 x 1               |                   |         |
+|                                                                                                                                    | 256 x 1                | GTP_ROM256X1      | 4       |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_sirv_mrom_top/u_sirv_mrom/mask_rom_3                                 | 1024 x 1               |                   |         |
+|                                                                                                                                    | 256 x 1                | GTP_ROM256X1      | 4       |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_mems/u_sirv_mrom_top/u_sirv_mrom/mask_rom_2                                 | 1024 x 1               |                   |         |
+|                                                                                                                                    | 256 x 1                | GTP_ROM256X1      | 4       |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| u_ddr3_ip/u_ipsl_hmic_h_ddrc_top/u_ddrc_reset_ctrl/u_ddrc_apb_reset/N258_2                                                         | 128 x 32               |                   |         |
+|                                                                                                                                    | 128 x 1                | GTP_ROM128X1      | 32      |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+| u_ddr3_ip/u_ipsl_hmic_h_ddrc_top/u_ddrc_reset_ctrl/u_ddrc_apb_reset/N258_1                                                         | 128 x 9                |                   |         |
+|                                                                                                                                    | 128 x 1                | GTP_ROM128X1      | 9       |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|---------|
+
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| Inst Name                                                                                                                            | Size (Depth x Width)   | Write_Mode_A      | Write_Mode_B      | Ram_Mode          | Primitives        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_2                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_2_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_2_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r                            | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_0                          | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_8                          | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_1                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_1_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_1_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_3                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_3_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_3_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_4                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_4_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_4_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem_r_3     | 8 K x 8                |                   |                   |                   |                   |
+|                                                                                                                          mem_r_3_0   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_3_1   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_3_2   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_3_3   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem_r_2     | 8 K x 8                |                   |                   |                   |                   |
+|                                                                                                                          mem_r_2_0   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_2_1   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_2_2   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_2_3   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem_r_1     | 8 K x 8                |                   |                   |                   |                   |
+|                                                                                                                          mem_r_1_0   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_1_1   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_1_2   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_1_3   | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem_r       | 8 K x 8                |                   |                   |                   |                   |
+|                                                                                                                          mem_r_0     | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_4     | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_5     | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                                          mem_r_6     | 8 K x 2                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_7                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_7_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_7_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_6                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_6_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_6_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+| dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_sirv_sim_ram/mem_r_5                          | 4 K x 8                |                   |                   |                   |                   |
+|                                                                                                     mem_r_5_0                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|                                                                                                     mem_r_5_1                        | 4 K x 4                | NORMAL_WRITE      | NORMAL_WRITE      | SIMPLE_DUAL_PORT  | GTP_DRM18K        |
+|--------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------|-------------------|-------------------|-------------------|
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
