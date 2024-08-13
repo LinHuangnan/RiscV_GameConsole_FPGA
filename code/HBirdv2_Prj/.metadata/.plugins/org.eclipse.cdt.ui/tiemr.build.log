@@ -1,0 +1,11 @@
+01:15:33 **** Incremental Build of configuration Debug for project tiemr ****
+make -j12 all 
+Invoking: GNU RISC-V Cross Print Size
+riscv-nuclei-elf-size --format=berkeley "tiemr.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12294	    116	   2366	  14776	   39b8	tiemr.elf
+Finished building: tiemr.siz
+ 
+
+01:15:33 Build Finished. 0 errors, 0 warnings. (took 220ms)
+

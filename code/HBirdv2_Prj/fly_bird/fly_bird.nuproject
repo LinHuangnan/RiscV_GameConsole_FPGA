@@ -1,0 +1,4 @@
+NPK_PACKS: 
+-  owner: nuclei
+   name: sdk-hbird_sdk
+   version: 0.1.3
