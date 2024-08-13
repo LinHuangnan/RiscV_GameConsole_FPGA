@@ -1,0 +1,8 @@
+﻿  udp_gui.cpp
+C:\pango\udp_gui\udp_gui.cpp(1,1): warning C4828: 文件包含在偏移 0x14a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\pango\udp_gui\udp_gui.cpp(1,1): warning C4828: 文件包含在偏移 0x14e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\pango\udp_gui\udp_gui.cpp(1,1): warning C4828: 文件包含在偏移 0x150 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\pango\udp_gui\udp_gui.cpp(1,1): warning C4828: 文件包含在偏移 0x151 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\pango\udp_gui\udp_gui.cpp(1,1): warning C4828: 文件包含在偏移 0x52f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\pango\udp_gui\udp_gui.cpp(1,1): warning C4828: 文件包含在偏移 0x530 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+  udp_gui.vcxproj -> C:\pango\udp_gui\x64\Debug\udp_gui.exe

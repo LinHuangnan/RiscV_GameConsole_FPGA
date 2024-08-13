@@ -1,0 +1,2 @@
+C:\pango\udp_gui\x64\Release\udp_gui.exe
+C:\pango\udp_gui\prj\x64\Release\udp_gui.exe
